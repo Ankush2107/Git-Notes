@@ -29,7 +29,17 @@ etc...
 - Now after downloading git in your local computer use this command:
 
  ```
-    git --version
+    git --version  
  ```
 
- 
+- Then create a project directory and initialize git repository in that file using this command:
+
+```
+    git init 
+```
+- This will create `.git` folder inside your project directory. If you want to check use `ls -a` command it will show you hidden files and folder.
+
+#### But wait, What is Repository?
+It is a folder managed by git where we can track all the changes we are making in the project.
+
+- Now we are ready to use any git command inside this folder
