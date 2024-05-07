@@ -23,3 +23,6 @@ etc...
 - Easily maintain code integrity.
 - Secure.
 - Flexible
+
+#### Let's start with installing git on your machine if you haven't already done so. You can download it from [here](https://git-scm.com/downloads) 
+
