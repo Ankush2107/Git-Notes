@@ -85,3 +85,20 @@ Whatever are the files your want to start tracking this command will help you fo
     console.log("Hiiii")
 ```
 
+- After this execute this following command:
+
+```
+    git commit -m "some custom message"
+```
+this create a new version based on your prev changes.
+
+### How exactly internally git stores data?
+Internally git stores data in the form of <key, value> pair.
+- key: 
+1. Hash of the data we want to store. It uses SHA1 for hashing.
+2. It is a 40 digit hexadecimal value.
+3. For same data this hash will be same. 
+
+- value: 
+1. Actual data.
+2. git stores the compressed data in a blob (big large object) and some more metadata in the header.
