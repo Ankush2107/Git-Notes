@@ -75,3 +75,13 @@ Git not automatically find what file or what folder will going to add in the new
     git add script.js
 ```
 Whatever are the files your want to start tracking this command will help you for that task.
+
+- After using this command you are not going to see any changes, but if you execute `git status` command you will notice there are no untracked files. It says `changes to be commited`.
+
+- If you added any changes to the file and again use the command `git status`. you will see changes to  be committed is there but also it says `changes not staged for commit`. There are some modified files. 
+
+```
+    console.log("Hello World");
+    console.log("Hiiii")
+```
+
