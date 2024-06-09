@@ -102,3 +102,18 @@ Internally git stores data in the form of <key, value> pair.
 - value: 
 1. Actual data.
 2. git stores the compressed data in a blob (big large object) and some more metadata in the header.
+
+#### Note: Inside git content is only shared once. 
+
+### How git handles directories?
+
+Tree:
+1. It stores information about directories and their content.
+2. tree contains pointers to other blob and tree.
+
+- git internally does a lot of optimization, the objects are stored in compressed form.
+- it mainly stores data about the changes and algorithemically shows us the file content with that change.
+
+```
+    git cat-file <flag> <hash>
+```
