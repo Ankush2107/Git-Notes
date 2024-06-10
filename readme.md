@@ -85,13 +85,6 @@ Whatever are the files your want to start tracking this command will help you fo
     console.log("Hiiii")
 ```
 
-- After this execute this following command:
-
-```
-    git commit -m "some custom message"
-```
-this create a new version based on your prev changes.
-
 ### How exactly internally git stores data?
 Internally git stores data in the form of <key, value> pair.
 - key: 
@@ -117,3 +110,41 @@ Tree:
 ```
     git cat-file <flag> <hash>
 ```
+
+### commit
+- commit is an object we call it commit object.
+- Any commit object points to a tree.
+- the commit has data of: 
+                        - author & committer.
+                        - date.
+                        - message.
+                        - parent commit. 
+
+
+#### Inside git tree you will see a head, head is always pointing to the latest commit.
+
+you can check by executing this command: 
+```
+    git log --oneline
+```
+
+### Whenever we code, it can live one of the following area's:
+#### 1. Working area: 
+The files/changes which are not in your staging area and may be currently not handle by git are in working area. This files/changes  are also called as untracked files.
+
+#### 2. Staging area: 
+Files and changes which are surely going to be part of the next commit are in staging area. (i.e, on files / changes When we do git add). Staging area is the place where git knows what will change between the current and the next commit. 
+
+- if you want to add any file in staging area use the command below:
+```
+    git add <file_name>
+```
+
+- if you want to remove/delete any file from the staging area use the command below:
+
+```
+    git rm --cached <file_name>
+```
+
+### 3. Repo Area  : 
+In this area all our commits resides.
